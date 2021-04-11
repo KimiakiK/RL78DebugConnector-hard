@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name RL78DebugConnector)(type Legacy)(uri ${KIPRJMOD}/RL78DebugConnector.lib)(options "")(descr ""))
+)

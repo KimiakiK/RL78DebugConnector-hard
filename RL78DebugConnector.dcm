@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP USB_B_Mini_Pin_Reverse
+D USB Mini Type B connector (Pin Reverse)
+K connector USB mini Pin Reverse
+F ~
+$ENDCMP
+#
+#End Doc Library

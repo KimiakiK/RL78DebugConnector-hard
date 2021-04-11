@@ -1,0 +1,232 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "RL78DebugConnector"
+Date "2021-04-10"
+Rev "V1.0"
+Comp "https://github.com/KimiakiK"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RL78DebugConnector:Renesas_Emulator_14pin J1
+U 1 1 607192B1
+P 3000 3000
+F 0 "J1" H 2700 3050 50  0000 R CNN
+F 1 "Renesas_Emulator_14pin" H 2700 2950 50  0000 R CNN
+F 2 "RL78DebugConnector:IDC-Header_2x07_P2.54mm_Vertical" H 3000 3000 50  0001 C CNN
+F 3 "" H 3000 3000 50  0001 C CNN
+	1    3000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 6071C208
+P 3550 2250
+F 0 "#PWR0101" H 3550 2100 50  0001 C CNN
+F 1 "+5V" H 3550 2400 50  0000 C CNN
+F 2 "" H 3550 2250 50  0001 C CNN
+F 3 "" H 3550 2250 50  0001 C CNN
+	1    3550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6071C7AD
+P 3450 3750
+F 0 "#PWR0102" H 3450 3500 50  0001 C CNN
+F 1 "GND" H 3450 3600 50  0000 C CNN
+F 2 "" H 3450 3750 50  0001 C CNN
+F 3 "" H 3450 3750 50  0001 C CNN
+	1    3450 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3650 3450 3650
+Wire Wire Line
+	3450 3650 3450 3750
+Wire Wire Line
+	3350 3450 3450 3450
+Wire Wire Line
+	3450 3450 3450 3650
+Connection ~ 3450 3650
+Wire Wire Line
+	3350 2450 3450 2450
+Wire Wire Line
+	3450 2450 3450 3450
+Connection ~ 3450 3450
+Wire Wire Line
+	3350 3050 3550 3050
+Wire Wire Line
+	3550 3050 3550 2250
+Wire Wire Line
+	3350 3150 3550 3150
+Wire Wire Line
+	3550 3150 3550 3050
+Connection ~ 3550 3050
+NoConn ~ 3350 2850
+Wire Wire Line
+	3350 2750 3650 2750
+Wire Wire Line
+	3350 3250 3550 3250
+Wire Wire Line
+	3350 3550 3550 3550
+Wire Wire Line
+	3550 3550 3550 3250
+Connection ~ 3550 3250
+Wire Wire Line
+	3550 3250 3650 3250
+$Comp
+L power:+5V #PWR0103
+U 1 1 6071EB99
+P 4600 2700
+F 0 "#PWR0103" H 4600 2550 50  0001 C CNN
+F 1 "+5V" H 4600 2850 50  0000 C CNN
+F 2 "" H 4600 2700 50  0001 C CNN
+F 3 "" H 4600 2700 50  0001 C CNN
+	1    4600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6071F6EB
+P 5000 3400
+F 0 "#PWR0104" H 5000 3150 50  0001 C CNN
+F 1 "GND" H 5000 3250 50  0000 C CNN
+F 2 "" H 5000 3400 50  0001 C CNN
+F 3 "" H 5000 3400 50  0001 C CNN
+	1    5000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2800 4600 2800
+Wire Wire Line
+	4600 2800 4600 2700
+NoConn ~ 4700 3200
+$Comp
+L Device:R_Small R2
+U 1 1 607208CC
+P 4250 1800
+F 0 "R2" H 4300 1800 50  0000 L CNN
+F 1 "R_Small" H 4309 1755 50  0001 C CNN
+F 2 "RL78DebugConnector:1608Metric" H 4250 1800 50  0001 C CNN
+F 3 "~" H 4250 1800 50  0001 C CNN
+	1    4250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D1
+U 1 1 60721014
+P 4250 2000
+F 0 "D1" V 4250 1930 50  0000 R CNN
+F 1 "LED_Small" V 4205 1930 50  0001 R CNN
+F 2 "RL78DebugConnector:1608Metric" V 4250 2000 50  0001 C CNN
+F 3 "~" V 4250 2000 50  0001 C CNN
+	1    4250 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 607218BE
+P 4200 3400
+F 0 "SW1" H 4200 3600 50  0000 C CNN
+F 1 "SW_Push" H 4200 3594 50  0001 C CNN
+F 2 "RL78DebugConnector:Switch_TS665SG-S" H 4200 3600 50  0001 C CNN
+F 3 "~" H 4200 3600 50  0001 C CNN
+	1    4200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 60723B0B
+P 4400 3400
+F 0 "#PWR0105" H 4400 3150 50  0001 C CNN
+F 1 "GND" H 4400 3250 50  0000 C CNN
+F 2 "" H 4400 3400 50  0001 C CNN
+F 3 "" H 4400 3400 50  0001 C CNN
+	1    4400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 60724D24
+P 4250 1700
+F 0 "#PWR0106" H 4250 1550 50  0001 C CNN
+F 1 "+5V" H 4250 1850 50  0000 C CNN
+F 2 "" H 4250 1700 50  0001 C CNN
+F 3 "" H 4250 1700 50  0001 C CNN
+	1    4250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 607254C2
+P 4250 2100
+F 0 "#PWR0107" H 4250 1850 50  0001 C CNN
+F 1 "GND" H 4250 1950 50  0000 C CNN
+F 2 "" H 4250 2100 50  0001 C CNN
+F 3 "" H 4250 2100 50  0001 C CNN
+	1    4250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 60729C9E
+P 4000 2700
+F 0 "#PWR0108" H 4000 2550 50  0001 C CNN
+F 1 "+5V" H 4000 2850 50  0000 C CNN
+F 2 "" H 4000 2700 50  0001 C CNN
+F 3 "" H 4000 2700 50  0001 C CNN
+	1    4000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 607277B0
+P 4000 2800
+F 0 "R1" H 3900 2800 50  0000 C CNN
+F 1 "1k" V 4000 2800 40  0000 C CNN
+F 2 "RL78DebugConnector:1608Metric" H 4000 2800 50  0001 C CNN
+F 3 "~" H 4000 2800 50  0001 C CNN
+	1    4000 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L RL78DebugConnector:USB_B_Mini_Pin_Reverse J2
+U 1 1 6073C7C0
+P 5000 3000
+F 0 "J2" H 4770 2989 50  0000 R CNN
+F 1 "USB_B_Mini_Pin_Reverse" H 4770 2898 50  0000 R CNN
+F 2 "RL78DebugConnector:Mini_USB_Male" H 5150 2950 50  0001 C CNN
+F 3 "~" H 5150 2950 50  0001 C CNN
+	1    5000 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3000 3650 2750
+Wire Wire Line
+	4700 3100 4000 3100
+Wire Wire Line
+	3650 3100 3650 3250
+Wire Wire Line
+	4000 3400 4000 3100
+Connection ~ 4000 3100
+Wire Wire Line
+	4000 3100 3650 3100
+Wire Wire Line
+	3650 3000 4000 3000
+Wire Wire Line
+	4000 2900 4000 3000
+Connection ~ 4000 3000
+Wire Wire Line
+	4000 3000 4700 3000
+Text Label 3700 3000 0    50   ~ 0
+TOOL0
+Text Label 3700 3100 0    50   ~ 0
+RESET
+$EndSCHEMATC
